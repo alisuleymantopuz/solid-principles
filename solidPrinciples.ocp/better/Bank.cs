@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace solidPrinciples.dip
+namespace solidPrinciples.ocp.better
 {
-    class Program
+    public class Bank
     {
-        static void Main(string[] args)
+        public void GetMoney(Account account, decimal amount)
         {
-
+            account.PayIn(amount);
         }
     }
 }
